@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHouse"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="House title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:text="$550/month"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_edit"
+                android:background="@android:color/transparent"
+                app:tint="@color/black"
+                android:contentDescription="Edit" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_delete"
+                android:background="@android:color/transparent"
+                app:tint="@color/red"
+                android:layout_marginStart="8dp"
+                android:contentDescription="Delete" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:text="View Details"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

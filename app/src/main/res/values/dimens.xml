@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="button_stroke_width">2dp</dimen>
+    <dimen name="padding_main">32dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+</resources>
